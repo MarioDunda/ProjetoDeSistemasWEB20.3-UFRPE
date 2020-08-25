@@ -1,0 +1,77 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 02</title>
+    </head>
+    <body>
+        <h1>Criar conta</h1>
+        <form action="http://www.atdsistemas.com.br/web/formulario/" method="post">
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <label for="nome">Primeiro nome:</label>
+                <input type="text" name="nome">
+                <br>
+                <br>
+                <label for="foto">Foto:</label>
+                <input type="file" name="foto" id="foto" accept="image" value="Escolher foto">
+                <br>
+                <br>
+                <label for="endereço">Endereço: </label>
+                <input type="text">
+                <br>
+                <br>
+                <p>Sexo: </p>
+                <input type="radio" value="masculino" name="masculino" id="masculino" >
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" value="feminino" name="feminino" id="feminino" >
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" value="nãodefinido" name="nãodefinido" id="naodefinido" >
+                <label for="nãodefinido">Não Definido</label>
+                <br>
+                <br>
+                <label for="formação">Nível de Formação Acadêmica Concluido</label>
+                <select name="option" id="formação">
+                    <option>Nenhuma Formação</option>
+                    <option>Ensino Médio</option>
+                    <option>Ensino Fundamental</option>
+                    <option>Nível Superior</option>
+                </select>
+                <p>Quem sou eu?</p>
+                <textarea name="sobre" id="sobre" cols="50" rows="3"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Redes Sociais</legend>
+                <label for="twitter">Twitter: </label>
+                <input type="text" name="twitter" placeholder="@username">
+                <br>
+                <br>
+                <label for="instagram">Instagram: </label>
+                <input type="text" name="instagram" placeholder="@username">
+                <br>
+                <br>
+                <label for="twitter">Facebook: </label>
+                <input type="text" name="twitter" placeholder="@username">
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Informações de Login</legend>
+                <label for="email">Email: </label>
+                <input type="email" name="email" placeholder="nome@email.com">
+                <br>
+                <br>
+                <label for="senha">Senha: </label> 
+                <input type="password" name="senha" placeholder="********">
+                <br>
+                <br>
+                <input type="checkbox" name="lembrar" value="lembrar">
+                <label for="lembrar">lembrar-me</label>
+            </fieldset>
+            <br>
+            <button type="reset">Limpar Campos</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html> 
